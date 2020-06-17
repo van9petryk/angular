@@ -77,8 +77,10 @@ All router components must be entry components. Because this would require you t
 ## The `entryComponents` array
 
 Though the `@NgModule` decorator has an `entryComponents` array, most of the time
-you won't have to explicitly set any entry components because Angular adds components listed in `@NgModule.bootstrap` and those in route definitions to entry components automatically. Though these two mechanisms account for most entry components, if your app happens to bootstrap or dynamically load a component by type imperatively,
+you won't have to explicitly set any entry components because Angular adds components listed in `@NgModule.bootstrap` and those in route definitions to entry components automatically. Though these two mechanisms account for most entry components, if your app happens to bootstrap or dynamically load a component by type imperatively with `FactoryComponent`,
 you must add it to `entryComponents` explicitly.
+
+**Note:** With Angular 9 and Ivy Compiler you don't need more specify `entryComponents` for dinamically load components;
 
 ### `entryComponents` and the compiler
 
