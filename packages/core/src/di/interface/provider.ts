@@ -58,7 +58,7 @@ export interface ValueProvider extends ValueSansProvider {
  */
 export interface StaticClassSansProvider {
   /**
-   * An optional class to instantiate for the `token`. By default, the `provide`
+   * A class to instantiate for the `token`. By default, the `provide`
    * class is instantiated.
    */
   useClass: Type<any>;
